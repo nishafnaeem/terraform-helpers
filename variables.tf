@@ -36,3 +36,12 @@ variable "gke_cluster_settings" {
     }))
   })
 }
+
+variable "google_project_settings" {
+    description = "The Google project settings"
+    type        = object({
+        project = string
+        region  = string
+        zone    = string
+    })
+}
